@@ -98,12 +98,10 @@ app.post("/withdrawals", verifyIfExistsAccountCPF, (request, response) => {
     }
 })
 
-
 app.get("/balances", verifyIfExistsAccountCPF, (request, response) => {
     const { customer } = request;
     const balance = getBalance(customer.statement) 
     return response.status(201).json(balance);
 })
-
 
 app.listen('3001')
