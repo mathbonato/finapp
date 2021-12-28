@@ -7,5 +7,6 @@ Passo a passo para rodar local:
  
 Passo a passo para testar a API:
   1. Baixar a collection do postman (/finapi/FINAPP.postman_collection.json).
+  2. Ao criar uma conta, o cpf deve ser passado no header das demais requisições.
   
 Obs: Os dados estão sendo salvos em memória, ao reiniciar o servidor tudo é apagado.
